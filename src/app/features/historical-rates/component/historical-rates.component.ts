@@ -67,7 +67,7 @@ export class HistoricalRatesComponent implements OnInit {
     const lastDaysOfMonths: string[] = [];
     const d = new Date();
     const lastYearNumber = d.getFullYear() - 1;
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 12; i++) {
         const currentMonthNumber = (d.getMonth() + i) % 12;
         const lastDayOfMonth = new Date(lastYearNumber + Math.floor((d.getMonth() + i) / 12), currentMonthNumber + 1, 0);
         lastDaysOfMonths.push(lastDayOfMonth.toLocaleDateString());
