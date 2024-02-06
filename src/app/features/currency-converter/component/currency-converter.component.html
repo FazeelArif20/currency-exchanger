@@ -21,5 +21,9 @@
   </form>
   <button  type="button" class="convert-button"><a [routerLink]="['/details','']">more details</a></button>
   <p class="converted-amount"> {{ defaultBaseCurrencyAmount}} {{currencyForm.get(currencySymbolsType.Base)?.value}} = {{baseCurrencyRate}} {{currencyForm.get(currencySymbolsType.Symbols)?.value}}</p>
+  <div class="container">
+    <div class="box">
+      <p class="converted-amount">{{ convertedAmount }} <span>{{ unit }}</span></p>
+    </div>
+  </div>
 
-  <p class="converted-amount">Converted Amount: {{ convertedAmount }} <span>{{ unit }}</span></p>

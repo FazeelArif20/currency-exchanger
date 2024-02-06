@@ -65,6 +65,17 @@ form {
         font-weight: normal;
       }
     }
+   
   }
   
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
   
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+  }
